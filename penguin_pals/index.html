@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Penguin Pals</title>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="stylesheets/styles.css"> -->
+
+    <!-- Libraries -->
+    <script type="text/javascript" src='javascripts/libraries/jquery.js'></script>
+    <script type="text/javascript" src='javascripts/libraries/underscore.js'></script>
+    <script type="text/javascript" src='javascripts/libraries/backbone.js'></script>
+
+    <!-- Templates -->
+    <script type="text/template" id='penguin-template'>
+        <p> My name is <%= name %> the penguin </p>
+    </script>
+
+    <!-- app -->
+    <script type="text/javascript" src='javascripts/backbone/app.js'></script>
+
+    <!-- Models -->
+    <script type="text/javascript" src='javascripts/backbone/models/Penguin.js'></script>
+
+    <!-- Collections -->
+    <script type="text/javascript" src='javascripts/backbone/collections/PenguinCollection.js'></script>
+
+    <!-- Views -->
+    <script type="text/javascript" src='javascripts/backbone/views/penguins/PenguinView.js'></script>
+    <script type="text/javascript" src='javascripts/backbone/views/penguins/PenguinListView.js'></script>
+
+  </head>
+
+
+  <body>
+
+    <div class="main-container">
+        <div class="penguins">
+            <form class="penguinform">
+                <input name="penguin-name" type="text" placeholder="Name this penguin">
+            </form>
+            
+            <ul class="penguin-list"></ul>
+        </div> 
+    </div>
+
+  </body>
+</html>

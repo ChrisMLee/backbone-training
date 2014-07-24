@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Wine Pals</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+
+    <!-- Libraries -->
+    <script type="text/javascript" src='javascripts/libraries/jquery.js'></script>
+    <script type="text/javascript" src='javascripts/libraries/underscore.js'></script>
+    <script type="text/javascript" src='javascripts/libraries/backbone.js'></script>
+
+    <!-- Templates -->
+     <script type="text/template" id="wine-template">
+
+        <p> This is the <%= name %> wine </p>
+
+    </script>
+
+    <!-- app -->
+    <script type="text/javascript" src='javascripts/backbone/app.js'></script>
+
+    <!-- Models -->
+    <script type="text/javascript" src='javascripts/backbone/models/Wine.js'></script>
+
+    <!-- Collections -->
+    <script type="text/javascript" src='javascripts/backbone/collections/WineCollection.js'></script>
+
+    <!-- Views -->
+    <script type="text/javascript" src='javascripts/backbone/views/WineView.js'></script>
+    <script type="text/javascript" src='javascripts/backbone/views/WineListView.js'></script>
+  </head>
+
+
+  <body>
+
+    <div class="main-container">
+        <div class="wines">
+            <form class="wineform">
+                <input type="text" name="wine-name" placeholder="Name this Wine">
+            </form>
+            <ul class="wine-list"></ul>
+        </div>
+    </div>
+
+  </body>
+
+</html>
