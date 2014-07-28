@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Bookr</title>
+  
+    <!-- ************ Libraries ************ -->
+    <script type="text/javascript" src='javascripts/libraries/jquery.js'></script>
+    <script type="text/javascript" src='javascripts/libraries/underscore.js'></script>
+    <script type="text/javascript" src='javascripts/libraries/backbone.js'></script>
+
+    <!-- ************ Templates ************ -->
+    <script type="text/template" id="author-template">
+      <div>
+        <h2><%= name %></h2>
+        <form>
+          <p>
+            <input type="text" placeholder="book title" name="title">
+          </p>
+        </form>
+        <ul class="books">
+        </ul>
+      </div>
+    </script>
+
+    <script type="text/template" id="book-template">
+      <div>
+        <h3><%= title %></h3>
+        <button name="delete_book">Delete</button>
+      </div>
+    </script>
+
+
+
+    <!-- ************ Book ************ -->
+    <script type="text/javascript" src='javascripts/backbone/book.js'></script>
+
+    <!-- ************ Author ************ -->
+    <script type="text/javascript" src='javascripts/backbone/author.js'></script>
+
+    <!-- ************ app ************ -->
+    <script type="text/javascript" src='javascripts/app.js'></script>
+
+
+  </head>
+
+  <body>
+
+    <h1>
+      Add Some Authors!!
+    </h1>
+
+    <form id='new-author'>
+      <input type="text" placeholder='author-name' id='author-name'>
+    </form>
+
+   <ul id="author-list">
+   </ul>
+
+  </body>
+</html>
